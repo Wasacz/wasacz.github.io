@@ -1,0 +1,65 @@
+/*
+	Wasacz, home
+	http://wasacz.net/
+	design by Wasacz
+*/
+
+html {
+	overflow: auto; /* hide scrollbar */
+}
+body {
+	position: relative;
+}
+#wrapper {
+	position: absolute;
+	top: 50%;
+}
+#wrapper h1 {
+	line-height: 1;
+}
+#wrapper h1 a {
+	-ms-extension: expression(
+		this.parsed ? 0 : (
+			span = document.createElement('span'),
+			span.appendChild(document.createTextNode('.net')),
+			this.appendChild(span),
+			this.parsed = 1
+		)
+	);
+}
+#wrapper h1 a span {
+	color: #c3c3bd;
+}
+#wrapper h1 a:hover {
+	color: #545451;
+}
+#wrapper h1 a:hover span {
+	color: #b5b5b0;
+}
+#content {
+	position: relative;
+	top: -50%;
+}
+#box {
+	zoom: 1;
+}
+#menu {
+	height: 1;
+}
+#menu p {
+	color: #8f8f8a;
+	-ms-extension: expression(
+		this.parsed ? 0 : (
+			span = document.createElement('span'),
+			span.appendChild(document.createTextNode('\00A0\203A')),
+			this.appendChild(span),
+			this.parsed = 1
+		)
+	);
+}
+#menu p span {
+	display: none;
+}
+#menu:hover p span {
+	display: inline;
+}

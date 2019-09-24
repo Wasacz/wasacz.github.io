@@ -1,0 +1,17 @@
+/*
+	Wasacz, home
+	http://wasacz.net/
+	design by Wasacz
+*/
+
+body {
+	behavior: url(csshover.htc);
+	width: 33.00em;
+}
+#wrapper {
+	margin-left: -1.00em;
+	padding-left: 1.00em;
+}
+#wrapper h1, #box, #intro, #menu {
+	zoom: 1;
+}

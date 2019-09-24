@@ -1,0 +1,12 @@
+/*
+	Wasacz, home
+	http://wasacz.net/
+	design by Wasacz
+*/
+
+#wrapper h1 a:after {
+	color: #c3c3bd;
+}
+#wrapper h1 a:hover:after {
+	color: #b5b5b0;
+}

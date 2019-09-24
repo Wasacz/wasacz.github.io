@@ -1,0 +1,121 @@
+/*
+	Wasacz, home
+	http://wasacz.net/
+	design by Wasacz
+*/
+
+/* global
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html, body {
+	height: 100%;
+	background-color: #f5f5ef;
+}
+body {
+	width: 32.14em;
+	margin: -0.88em auto 0 auto;
+	padding: 0;
+	display: table;
+	font: normal 0.88em Georgia, 'DejaVu Serif', 'DejaVu LGC Serif', 'Liberation Serif', serif;
+	color: #787873;
+}
+
+/* main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+#wrapper h1 {
+	margin: 0 0 0 0.29em;
+	font-size: 2.00em;
+	font-weight: normal;
+	text-transform: lowercase;
+	line-height: 0.88;
+}
+#wrapper h1 a {
+	color: #787873;
+	text-decoration: none;
+	text-shadow: 0 0 4px #787873;
+}
+#wrapper h1 a:hover {
+	color: #545451;
+}
+#wrapper h1 a:after {
+	display: inline;
+	opacity: 0.4;
+	content: '.net';
+}
+#box {
+	padding: 0.86em;
+	border: 1px solid #ccccbf;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #edede5 url(bg.gif);
+	-moz-box-shadow: 1px 1px 3px #ccccbf;
+	-webkit-box-shadow: 1px 1px 3px #ccccbf;
+	box-shadow: 1px 1px 3px #ccccbf;
+}
+#box a:link, #box a:visited {
+	text-decoration: none;
+	color: #787873;
+}
+#box a:hover {
+	border-bottom: 1px dotted #545451;
+	text-shadow: 0 0 12px #787873;
+	color: #545451;
+}
+#box a:active {
+	border-bottom-color: #000;
+	color: #000;
+}
+
+/* intro
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#intro {
+	padding: 0.86em 10% 2.57em 0;
+}
+#intro p {
+	margin: 0 0 0.57em 0;
+	line-height: 145%;
+}
+
+/* menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#menu {
+	clear: both;
+	overflow: hidden;
+}
+#menu p {
+	margin: 0;
+	float: left;
+	white-space: nowrap; /* for Safari */
+	opacity: 0.8;
+}
+#menu:hover p:after {
+	content: '\00A0\203A';
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style-type: none;
+}
+#menu ul li {
+	display: inline;
+	margin-left: 0.43em;
+	text-transform: lowercase;
+}
+#menu ul li:before { /* Opera 9.5+ @Windows fix */
+	margin-right: -0.20em;
+	color: #000;
+	visibility: hidden;
+	content: '.';
+	speak: none;
+}
+#menu p, #menu ul {
+	line-height: 145%;
+}
